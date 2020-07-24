@@ -58,16 +58,16 @@ class test_ClusterNodeNic(baseClusterTestClass):
             self.assertEqual(nic.getNetmask(), self.nicValues[i]["netmask"])
             i = i + 1
             
-    def testGetmaster(self):
+    def testGetmain(self):
         i = 0
         for nic in self.nics:
-            self.assertEqual(nic.getMaster(), self.nicValues[i]["master"])
+            self.assertEqual(nic.getMain(), self.nicValues[i]["main"])
             i = i + 1
             
-    def testGetslave(self):
+    def testGetsubordinate(self):
         i = 0
         for nic in self.nics:
-            self.assertEqual(nic.getSlave(), self.nicValues[i]["slave"])
+            self.assertEqual(nic.getSubordinate(), self.nicValues[i]["subordinate"])
             i = i + 1
 
 def test_main():

@@ -113,15 +113,15 @@ class ComoonicsClusterNodeNic(ClusterObject):
         #optional attribute, return empty string if not set
         return self.getAttribute(ComoonicsClusterRepository.attribute_netdev_netmask, "")
     
-    def getMaster(self):
-        """Returns master"""
+    def getMain(self):
+        """Returns main"""
         #optional attribute, return empty string if not set
-        return self.getAttribute(ComoonicsClusterRepository.attribute_netdev_master, "")
+        return self.getAttribute(ComoonicsClusterRepository.attribute_netdev_main, "")
     
-    def getSlave(self):
-        """Returns slave"""
+    def getSubordinate(self):
+        """Returns subordinate"""
         #optional attribute, return empty string if not set
-        return self.getAttribute(ComoonicsClusterRepository.attribute_netdev_slave, "")
+        return self.getAttribute(ComoonicsClusterRepository.attribute_netdev_subordinate, "")
 
 # $Log: ComClusterNodeNic.py,v $
 # Revision 1.10  2009-07-22 08:37:09  marc

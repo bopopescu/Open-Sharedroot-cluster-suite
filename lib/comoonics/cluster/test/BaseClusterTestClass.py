@@ -61,8 +61,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[0]["ip"] = "dhcp"
         self.nicValues[0]["gateway"] = ""
         self.nicValues[0]["netmask"] = ""
-        self.nicValues[0]["master"] = ""
-        self.nicValues[0]["slave"] = ""
+        self.nicValues[0]["main"] = ""
+        self.nicValues[0]["subordinate"] = ""
         
         self.nicValues.append({})
         self.nicValues[1]["name"] = "eth0"
@@ -72,8 +72,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[1]["ip"] = "10.0.0.2"
         self.nicValues[1]["gateway"] = ""
         self.nicValues[1]["netmask"] = "255.255.255.0"
-        self.nicValues[1]["master"] = "bond0"
-        self.nicValues[1]["slave"] = "yes"
+        self.nicValues[1]["main"] = "bond0"
+        self.nicValues[1]["subordinate"] = "yes"
         
         self.nicValues.append({})
         self.nicValues[2]["name"] = "eth1"
@@ -83,8 +83,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[2]["ip"] = "10.0.0.3"
         self.nicValues[2]["gateway"] = "1.2.3.4"
         self.nicValues[2]["netmask"] = "255.255.255.0"
-        self.nicValues[2]["master"] = ""
-        self.nicValues[2]["slave"] = ""
+        self.nicValues[2]["main"] = ""
+        self.nicValues[2]["subordinate"] = ""
         
         self.nicValues.append({})
         self.nicValues[3]["name"] = "bond0"
@@ -94,8 +94,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[3]["ip"] = "192.168.10.22"
         self.nicValues[3]["gateway"] = "192.168.10.1"
         self.nicValues[3]["netmask"] = "255.255.255.0"
-        self.nicValues[3]["master"] = ""
-        self.nicValues[3]["slave"] = ""
+        self.nicValues[3]["main"] = ""
+        self.nicValues[3]["subordinate"] = ""
         
         self.nicValues.append({})
         self.nicValues[4]["name"] = "eth0"
@@ -105,8 +105,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[4]["ip"] = ""
         self.nicValues[4]["gateway"] = ""
         self.nicValues[4]["netmask"] = ""
-        self.nicValues[4]["master"] = "bond0"
-        self.nicValues[4]["slave"] = "yes"
+        self.nicValues[4]["main"] = "bond0"
+        self.nicValues[4]["subordinate"] = "yes"
         
         self.nicValues.append({})
         self.nicValues[5]["name"] = "bond0.45"
@@ -116,8 +116,8 @@ class baseClusterTestClass(unittest.TestCase):
         self.nicValues[5]["ip"] = "192.168.254.233"
         self.nicValues[5]["gateway"] = ""
         self.nicValues[5]["netmask"] = "255.255.255.255"
-        self.nicValues[5]["master"] = ""
-        self.nicValues[5]["slave"] = ""
+        self.nicValues[5]["main"] = ""
+        self.nicValues[5]["subordinate"] = ""
         
         # Preparation of nodes
         self.nodeValues = []
